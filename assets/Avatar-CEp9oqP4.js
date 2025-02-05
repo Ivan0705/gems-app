@@ -1,1 +1,0 @@
-import{r as m,j as n,c as i}from"./index-BYksjCGs.js";const l="_Avatar_1iq2y_1",v={Avatar:l},x=t=>{const{className:a,size:s,src:r,alt:e}=t,c={},o=m.useMemo(()=>({width:s||100,height:s||100}),[s]);return n.jsx("img",{className:i(v.Avatar,c,[a]),src:r,style:o,alt:e,"data-testid":"avatar"})};export{x as A};
