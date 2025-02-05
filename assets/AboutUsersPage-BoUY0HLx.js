@@ -1,0 +1,1 @@
+import{r as e,j as s,P as a}from"./index-F7W8PYj7.js";import{U as r}from"./UserInfo-BgzliKUh.js";import"./Avatar-DR7wBjLL.js";const t="_aboutUsersPage_fu6bd_1",o={aboutUsersPage:t},i=e.memo(()=>s.jsx(a,{className:o.aboutUsersPage,children:s.jsx("div",{"data-testid":"about_users_page",children:s.jsx(r,{})})}));export{i as AboutUsersPage};
