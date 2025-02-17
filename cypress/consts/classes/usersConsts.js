@@ -1,6 +1,13 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.skeletonUsersIsLoading_btn = exports.skeletonUsersIsLoading_title = exports.skeletonSearch = exports.skeletonUsersIsLoading = exports.user = exports.btn = exports.user_title = void 0;
+exports.skeletonUsersIsLoading_btn =
+  exports.skeletonUsersIsLoading_title =
+  exports.skeletonSearch =
+  exports.skeletonUsersIsLoading =
+  exports.user =
+  exports.btn =
+  exports.user_title =
+    void 0;
 /*Users const*/
 exports.user_title = "_user_title_ju9tf_7";
 exports.btn = "_btn_ju9tf_11";

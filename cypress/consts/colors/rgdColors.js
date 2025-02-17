@@ -1,6 +1,19 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.inverted_primary_color_light = exports.skeleton_shadow_dark = exports.hover_text_light = exports.black_icon = exports.primary_color_light = exports.primary_color_dark = exports.inverted_secondary_color_light = exports.inverted_secondary_color_dark = exports.black = exports.primary_text_color_light = exports.primary_text_color_dark = exports.bg_сolor_light = exports.bg_color_dark = void 0;
+exports.inverted_primary_color_light =
+  exports.skeleton_shadow_dark =
+  exports.hover_text_light =
+  exports.black_icon =
+  exports.primary_color_light =
+  exports.primary_color_dark =
+  exports.inverted_secondary_color_light =
+  exports.inverted_secondary_color_dark =
+  exports.black =
+  exports.primary_text_color_light =
+  exports.primary_text_color_dark =
+  exports.bg_сolor_light =
+  exports.bg_color_dark =
+    void 0;
 exports.bg_color_dark = "rgb(4, 38, 85)";
 exports.bg_сolor_light = "rgb(254, 255, 254)";
 exports.primary_text_color_dark = "rgb(202, 200, 206)";

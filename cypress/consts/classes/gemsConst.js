@@ -1,6 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.title = exports.gemCard_text = exports.card = exports.gemCard_wrapper_side = exports.gem_wrapper = exports.gemCard = void 0;
+exports.title =
+  exports.gemCard_text =
+  exports.card =
+  exports.gemCard_wrapper_side =
+  exports.gem_wrapper =
+  exports.gemCard =
+    void 0;
 /*Gems consts*/
 exports.gemCard = "_gemCard_koz1b_1";
 exports.gem_wrapper = "_gem_wrapper_xnbq8_6";

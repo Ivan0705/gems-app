@@ -1,11 +1,11 @@
-import {main, posts, userId, users} from "@/shared/api/api"
+import { main, posts, userId, users } from "@/shared/api/api";
 
 export enum AppRoutes {
-    MAIN = "mainPage",
-    USERS = "users",
-    USER_INFO = "user_info",
-    POSTS = "posts",
-    NOT_FOUND = "not_found",
+  MAIN = "mainPage",
+  USERS = "users",
+  USER_INFO = "user_info",
+  POSTS = "posts",
+  NOT_FOUND = "not_found",
 }
 
 export const getRouteMain = () => main;
