@@ -1,16 +1,17 @@
 import { Gems } from "./Gems";
-import { ProviderDecorator } from "../../../shared/storybookDecorators/providerDecorator/ProviderDecorator";
 import { Meta, StoryObj } from "@storybook/react";
 import { ThemeDecorator } from "@/shared/storybookDecorators/themeDecorator/ThemeDecorator";
 import { Theme } from "@/app/providers/theme_provider/lib/ThemeContext";
+import { ProviderDecorator } from "@/shared/storybookDecorators/providerDecorator/ProviderDecorator";
 
 const meta = {
   title: "entities/gems/Gems",
   component: Gems,
   decorators: [ProviderDecorator],
   tags: ["autodocs"],
-} satisfies Meta<typeof Gems>;
+} as Meta<typeof Gems>;
 
+// noinspection JSUnusedGlobalSymbols
 export default meta;
 
 type Story = StoryObj<typeof Gems>;

@@ -1,6 +1,6 @@
 import { Suspense } from "react";
 import { Route, Routes } from "react-router-dom";
-import { arrayRouters } from "../const/router";
+import { arrayRouters } from "../consts/router";
 import { IRoute } from "../model/types";
 import { useTranslation } from "react-i18next";
 import { MainPage } from "@/page/main_page";
@@ -22,7 +22,7 @@ export const AppRouter = () => {
     </Routes>
   );
   const children = (
-    <Suspense fallback={<div className={cls.appRouter}>{t("loading")}</div>}>
+    <Suspense fallback={<div className={cls.appRouter}>{t("")}</div>}>
       {routersWrapper}
     </Suspense>
   );

@@ -15,14 +15,6 @@ export const postAPI = createApi({
         },
       }),
       providesTags: ["Post"],
-    }),
-    searchPost: build.query({
-      query: (search: string) => ({
-        url: posts,
-        params: {
-          search: search,
-        },
-      }),
-    }),
+    })
   }),
 });

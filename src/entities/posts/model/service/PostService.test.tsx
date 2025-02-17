@@ -2,7 +2,7 @@ import { postAPI } from "./PostService";
 import { renderHook, waitFor } from "@testing-library/react";
 import { wrapperRouterProviderForTest } from "../../../../shared/libs/wrapperRouterProviderForTest/wrapperRouterProviderForTest";
 import { ReactNode } from "react";
-import { posts, urlWithParms } from "../../../../shared/api/api";
+import { posts, urlWithParams } from "../../../../shared/api/api";
 import createFetchMock from "vitest-fetch-mock";
 import { vi } from "vitest";
 const fetch = createFetchMock(vi);
@@ -54,7 +54,7 @@ describe("PostService", () => {
   });
 
   beforeEach(() => {
-    const url = urlWithParms(posts);
+    const url = urlWithParams(posts);
 
     fetch.doMockOnceIf(url, () =>
       Promise.resolve({
@@ -62,32 +62,5 @@ describe("PostService", () => {
         body: JSON.stringify({ data }),
       }),
     );
-  });
-
-  test("Test postAPI searchPost", () => {
-    const obj = {
-      current: {
-        status: "pending",
-        endpointName: "searchPost",
-        requestId: "GqJJ86E6rBWY8LVEocXZf",
-        originalArgs: "",
-        startedTimeStamp: 1731388394669,
-        isUninitialized: false,
-        isLoading: true,
-        isSuccess: false,
-        isError: false,
-        data: undefined,
-        currentData: undefined,
-        isFetching: true,
-        refetch: () => refetch,
-      },
-    };
-    const { result } = renderHook(() => postAPI.useSearchPostQuery(""), {
-      wrapper: Wrapper,
-    });
-    console.log("result:", result);
-    expect(result.current.status).toBe(obj.current.status);
-    expect(result.current.status).toBe("pending");
-    expect(result.current.isUninitialized).not.toBe(true);
   });
 });

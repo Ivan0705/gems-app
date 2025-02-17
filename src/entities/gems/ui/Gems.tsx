@@ -1,4 +1,5 @@
 import { memo, useState } from "react";
+// noinspection TypeScriptCheckImport
 import { useTranslation } from "react-i18next";
 import { GemCard } from "./GemCard/GemCard";
 import { arrayGems } from "../consts/arrayGems";
@@ -11,21 +12,25 @@ import { ReactComponent as Shape } from "@/shared/assets/icons/shape.svg?react";
 import { ReactComponent as Tiled } from "@/shared/assets/icons/tiled.svg?react";
 import { Button } from "@/shared/ui/Button/Button";
 import { ButtonTheme } from "@/shared/ui/Button/consts/enums";
-
+// noinspection TypeScriptUnresolvedVariable
 const defaultSize = localStorage.getItem(LOCAL_STORAGE_KEY) || ThemeSize.BIG;
 
 export const Gems = memo(() => {
   const { t } = useTranslation(["gems"]);
+  // noinspection TypeScriptUnresolvedVariable
   const big = cls.gem_wrapper_big;
+  // noinspection TypeScriptUnresolvedVariable
   const mini = cls.gem_wrapper_mini;
 
   const [size, setSize] = useState<string | ThemeSize>(defaultSize);
 
   const toggleTheme = () => {
     const newSize = size === ThemeSize.MINI ? ThemeSize.BIG : ThemeSize.MINI;
-    setSize?.(newSize);
+    setSize?.(newSize); // noinspection TypeScriptUnresolvedVariable
+
     localStorage.setItem(LOCAL_STORAGE_KEY, newSize);
   };
+  // noinspection TypeScriptUnresolvedVariable
 
   return (
     <section className={cls.gem} data-testid="gems">

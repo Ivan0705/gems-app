@@ -1,4 +1,4 @@
-/*App consts*/
+/*App consts */
 export const root = "root";
 export const app = "app";
 export const dark = "dark";

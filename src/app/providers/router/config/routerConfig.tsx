@@ -7,7 +7,7 @@ import {
   getRoutePosts,
   getRouteUserInfo,
   getRouteUsers,
-} from "@/shared/const/router";
+} from "@/shared/consts/router";
 
 export const routerConfig = {
   [AppRoutes.MAIN]: {

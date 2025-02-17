@@ -1,1 +1,47 @@
-._userCard_oha28_1{display:grid;margin:12px 12px 12px 5px;padding:10px;align-items:center;font-size:25px;color:var(--primary-text-color)}@media (max-width: 700px){._userCard_oha28_1{font-size:20px;margin-left:2px}}@media (max-width: 400px){._userCard_oha28_1{font-size:15px}}._userCard_avatar_oha28_20{display:grid;margin-right:15px}._userCard_userInfo_oha28_24{font-family:var(--font-family-main)}._userCard_companyInfo_oha28_27{font-family:var(--font-family-main);margin-top:15px}._user_oha28_1{display:flex}@media (max-width: 880px){._user_oha28_1{flex-wrap:wrap}}._name_oha28_41{display:flex;justify-content:space-between}._btn_oha28_46{color:var(--primary-text-color);border:2px var(--primary-text-color) solid;width:100px}
+._userCard_oha28_1 {
+  display: grid;
+  margin: 12px 12px 12px 5px;
+  padding: 10px;
+  align-items: center;
+  font-size: 25px;
+  color: var(--primary-text-color);
+}
+@media (max-width: 700px) {
+  ._userCard_oha28_1 {
+    font-size: 20px;
+    margin-left: 2px;
+  }
+}
+@media (max-width: 400px) {
+  ._userCard_oha28_1 {
+    font-size: 15px;
+  }
+}
+._userCard_avatar_oha28_20 {
+  display: grid;
+  margin-right: 15px;
+}
+._userCard_userInfo_oha28_24 {
+  font-family: var(--font-family-main);
+}
+._userCard_companyInfo_oha28_27 {
+  font-family: var(--font-family-main);
+  margin-top: 15px;
+}
+._user_oha28_1 {
+  display: flex;
+}
+@media (max-width: 880px) {
+  ._user_oha28_1 {
+    flex-wrap: wrap;
+  }
+}
+._name_oha28_41 {
+  display: flex;
+  justify-content: space-between;
+}
+._btn_oha28_46 {
+  color: var(--primary-text-color);
+  border: 2px var(--primary-text-color) solid;
+  width: 100px;
+}

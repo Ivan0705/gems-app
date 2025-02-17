@@ -1,1 +1,14 @@
-@media (max-width: 3000px){._error_3x0i0_2{margin-bottom:700px}}@media (max-width: 1500px){._error_3x0i0_2{margin-bottom:395px}}._users_p22vk_1{color:var(--primary-text-color);margin:15px}
+@media (max-width: 3000px) {
+  ._error_3x0i0_2 {
+    margin-bottom: 700px;
+  }
+}
+@media (max-width: 1500px) {
+  ._error_3x0i0_2 {
+    margin-bottom: 395px;
+  }
+}
+._users_p22vk_1 {
+  color: var(--primary-text-color);
+  margin: 15px;
+}

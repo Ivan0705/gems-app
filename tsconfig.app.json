@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "types": ["vite/client"],
     "target": "ES2020",
     "useDefineForClassFields": true,
     "lib": ["ES2020", "DOM", "DOM.Iterable"],
@@ -32,5 +33,5 @@
     ]
   },
   "exclude": ["node_modules"],
-  "include": ["src", "cypress/"]
+  "include": ["src", "cypress/", "node_modules/@types/node/globals.d.ts"]
 }

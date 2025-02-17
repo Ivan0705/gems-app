@@ -1,5 +1,4 @@
-import {postAPI} from "./model/service/PostService";
-import {Posts} from "@/entities/posts/ui/Posts/Posts";
-//import {IPost} from "../../../src/entities/posts/model/types/types";
+import { Posts } from "./ui/Posts/Posts";
+import { postAPI } from "./model/service/PostService";
 
-export {IPost, Posts, postAPI};
+export { Posts, postAPI };

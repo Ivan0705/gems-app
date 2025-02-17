@@ -5,7 +5,6 @@
     "media-feature-range-notation": null,
     "selector-class-pattern": null,
     "color-hex-length": "long",
-    "import-notation":"string"
-
+    "import-notation": "string"
   }
 }

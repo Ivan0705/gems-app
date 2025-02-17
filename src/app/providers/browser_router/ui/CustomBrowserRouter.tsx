@@ -1,13 +1,12 @@
-import {ReactNode} from "react";
+import { memo, ReactNode } from "react";
+import { baseName } from "@/app/providers/browser_router/config/baseName";
+import { BrowserRouter } from "react-router-dom";
 
 interface CustomBrowserRouterProps {
-    children: ReactNode
+  children: ReactNode;
 }
 
-export const CustomBrowserRouter = (props: CustomBrowserRouterProps) => {
-    const {children} = props;
-    return(
-        <BrowserRouter></BrowserRouter>
-    )
-
-}
+export const CustomBrowserRouter = memo((props: CustomBrowserRouterProps) => {
+  const { children } = props;
+  return <BrowserRouter basename={baseName()}>{children}</BrowserRouter>;
+});

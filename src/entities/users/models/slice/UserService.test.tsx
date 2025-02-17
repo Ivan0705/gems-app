@@ -3,7 +3,7 @@ import { ReactNode } from "react";
 import { userAPI } from "./UserService";
 import { wrapperRouterProviderForTest } from "@/shared/libs/wrapperRouterProviderForTest/wrapperRouterProviderForTest";
 import createFetchMock from "vitest-fetch-mock";
-import { urlWithParms, userId, users } from "@/shared/api/api";
+import { urlWithParams, userId, users } from "@/shared/api/api";
 
 const fetch = createFetchMock(vi);
 fetch.enableMocks();
@@ -46,7 +46,7 @@ describe("UserService", async () => {
   });
 
   beforeEach(() => {
-    const url = urlWithParms(users);
+    const url = urlWithParams(users);
 
     fetch.doMockOnceIf(url, () =>
       Promise.resolve({
@@ -66,7 +66,7 @@ describe("UserService", async () => {
     }, 100);
   });
   beforeEach(() => {
-    const url = urlWithParms(userId(id));
+    const url = urlWithParams(userId(id));
 
     fetch.doMockOnceIf(url, () =>
       Promise.resolve({

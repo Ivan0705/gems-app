@@ -11,7 +11,6 @@ type PostItemPropsType = Partial<PostItemProps> | ObjectProperties;
 
 export const PostItem = memo((props: PostItemPropsType) => {
   const { post } = props;
-
   return (
     <article className={cls.postItem} data-testid="postitem">
       <div key={post.id}>

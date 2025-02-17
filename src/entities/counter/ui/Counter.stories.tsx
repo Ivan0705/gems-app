@@ -15,8 +15,9 @@ const meta = {
       control: "color",
     },
   },
-} satisfies Meta<typeof Counter>;
+} as Meta<typeof Counter>;
 
+// noinspection JSUnusedGlobalSymbols
 export default meta;
 
 type Story = StoryObj<typeof Counter>;

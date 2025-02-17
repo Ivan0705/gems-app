@@ -15,8 +15,9 @@ const meta = {
     },
   },
   tags: ["autodocs"],
-} satisfies Meta<typeof PostItem>;
+} as Meta<typeof PostItem>;
 
+// noinspection JSUnusedGlobalSymbols
 export default meta;
 
 type Story = StoryObj<typeof PostItem>;
