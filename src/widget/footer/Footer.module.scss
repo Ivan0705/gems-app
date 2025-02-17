@@ -1,0 +1,17 @@
+.footer {
+  background-color: var(--inverted-primary-color);
+  height: 30px;
+  width: 100%;
+  flex: 0 0 auto;
+
+  @media (max-width: 770px) {
+    height: 20px;
+  }
+
+  &_title {
+    width: 200px;
+    float: right;
+    margin-right: 20px;
+    color: var(--secondary-text-color);
+  }
+}

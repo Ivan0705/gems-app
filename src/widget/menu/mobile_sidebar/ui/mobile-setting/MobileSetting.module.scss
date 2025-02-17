@@ -1,0 +1,19 @@
+.mobile_setting {
+  width: 100%;
+  position: absolute;
+  background-color: var(--light-gray);
+  right: 0;
+
+  &_wrapper {
+    display: flex;
+  }
+}
+.item {
+  display: flex;
+  justify-content: center;
+}
+.btn {
+  align-items: center;
+  width: 90px;
+  height: 90px;
+}

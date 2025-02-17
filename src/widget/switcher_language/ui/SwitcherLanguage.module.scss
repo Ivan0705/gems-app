@@ -1,0 +1,14 @@
+.switherLanguage {
+  display: grid;
+  width: 75px;
+  height: 75px;
+
+  &_flag {
+    height: 50px;
+  }
+  &_title {
+    color: var(--black-text);
+    text-align: center;
+    top: 0;
+  }
+}

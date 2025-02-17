@@ -1,0 +1,82 @@
+.navbar {
+  background-color: var(--inverted-primary-color);
+  height: 180px;
+  background: url("../picture/gems.jpg");
+  opacity: 1;
+
+  @media (min-width: 1024px) {
+    background-size: 100%;
+  }
+
+  @media (max-width: 770px) {
+    height: 120px;
+  }
+
+  &_wrapper {
+    justify-content: space-between;
+    display: flex;
+    height: calc(1366px / 12);
+    width: 100%;
+  }
+
+  &_burgerMenu,
+  &_gearSetting {
+    width: 40px;
+    height: 40px;
+  }
+
+  &_logo {
+    margin-left: 3px;
+    display: flex;
+    font-size: 45px;
+    justify-content: center;
+    align-items: center;
+
+    @media (max-width: 420px) {
+      font-size: 38px;
+    }
+  }
+
+  &_logoPicture {
+    width: 45px;
+    height: 45px;
+    margin-right: 25px;
+    margin-left: 5px;
+  }
+  &_btns {
+    margin-right: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &_mobile {
+    display: flex;
+    margin-right: 5px;
+  }
+}
+
+.btn {
+  text-align: center;
+  width: 75px;
+  height: 75px;
+  margin-left: 20px;
+
+  @media (max-width: 770px) {
+    display: none;
+  }
+}
+
+.burgerBtn,
+.gearBtn {
+  display: none;
+  @media (max-width: 770px) {
+    display: flex;
+  }
+  @media (max-width: 420px) {
+    width: 30px;
+    height: 30px;
+  }
+}
+h4 {
+  color: var(--black-icon);
+}

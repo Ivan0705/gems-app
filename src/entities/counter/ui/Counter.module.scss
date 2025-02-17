@@ -1,0 +1,21 @@
+.counter {
+  display: grid;
+  color: var(--primary-text-color);
+
+  &_title {
+    font-size: 45px;
+    margin-left: 25px;
+  }
+
+  &_btns {
+    display: flex;
+    margin-top: 20px;
+  }
+}
+
+.btn {
+  width: 45px;
+  height: 35px;
+  color: var(--primary-text-color);
+  border: 2px var(--primary-text-color) solid;
+}

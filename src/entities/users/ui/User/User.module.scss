@@ -1,0 +1,14 @@
+.user {
+  font-size: 20px;
+  margin-top: 6px;
+  text-decoration: underline;
+  color: var(--primary-text-color);
+  &_title {
+    margin-top: 10px;
+  }
+}
+
+.btn {
+  margin-top: 5px;
+  border: 2px var(--primary-text-color) solid;
+}

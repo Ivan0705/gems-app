@@ -1,0 +1,37 @@
+@import "reset";
+@import "variables/global";
+@import "themes/dark.scss";
+@import "themes/normal";
+
+.app {
+  font-size: var(--font-m);
+  background: var(--bg-color);
+  min-height: 100vh;
+  width: 100vw;
+  min-width: 100px;
+}
+
+.app,
+.app_modal {
+  font: var(--font-m);
+  color: var(--primary-color);
+}
+
+.content-page {
+  display: flex;
+}
+
+*::-webkit-scrollbar {
+  width: 10px;
+  height: 8px;
+}
+
+*::-webkit-scrollbar-track {
+  background: var(--card-bg);
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var(--inverted-primary-color);
+  border-radius: 20px; /* закругления плашки */
+  border: 2px solid var(--primary-color); /* padding вокруг плашки */
+}

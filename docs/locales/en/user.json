@@ -1,0 +1,17 @@
+{
+  "name": "Name",
+  "username": "User name",
+  "email": "Email",
+  "street": "Street",
+  "city": "City",
+  "suite": "Suite",
+  "zipcode": "Zipcode",
+  "geo_lat": "Geo_Lat",
+  "geo_lng": "Geo_Lng",
+  "phone": "Phone",
+  "website": "Website",
+  "company": "About company",
+  "company_name": "Name",
+  "company_catchPhrase": "Cath phase",
+  "company_bs": "bs"
+}

@@ -1,0 +1,50 @@
+.desktop_sidebar {
+  &_menu {
+    background-color: var(--inverted-primary-color);
+    display: flex;
+    width: 100%;
+    justify-content: end;
+    margin-top: 25px;
+
+    &_items_list {
+      display: flex;
+      margin-right: 45px;
+    }
+
+    &_item {
+      width: 100%;
+      margin: 0px 5px;
+      text-align: center;
+      align-items: center;
+      height: 50px;
+      font-family: var(--font-family-main);
+      border-radius: 10px;
+
+      &:hover {
+        background-color: var(--inverted-secondary-color);
+        border-radius: 5px;
+        color: var(--hover-text);
+      }
+
+      &:active {
+        color: var(--secondary-text-color);
+        text-decoration: underline;
+      }
+    }
+  }
+}
+@media (max-width: 770px) {
+  .desktop_sidebar {
+    display: none;
+  }
+}
+
+.title {
+  display: block;
+  color: var(--secondary-text-color);
+  font-size: 20px;
+  padding: 10px;
+  &:hover {
+    color: var(--hover-text);
+  }
+}

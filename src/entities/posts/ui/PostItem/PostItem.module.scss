@@ -1,0 +1,19 @@
+.postItem {
+  margin-top: 10px;
+  border: 2px solid var(--inverted-secondary-color);
+  border-radius: 10px;
+  padding: 4px;
+  color: var(--primary-text-color);
+
+  &_title {
+    font-size: 20px;
+    margin-left: -5px;
+  }
+
+  &_line {
+    width: 99%;
+    margin-left: 2px;
+    margin-bottom: 2px;
+    border: 2px solid var(--inverted-secondary-color);
+  }
+}

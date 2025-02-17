@@ -1,0 +1,42 @@
+.mobileSidebar {
+  position: absolute;
+  background-color: var(--inverted-primary-color);
+  display: none;
+
+  &_menu {
+    display: flex;
+  }
+}
+@media (max-width: 770px) {
+  .mobileSidebar {
+    display: grid;
+    flex-direction: column;
+    width: 100%;
+  }
+}
+
+.item {
+  font-size: 28px;
+  border-radius: 7px;
+  margin: 12px;
+  padding: 5px;
+  text-align: center;
+  align-items: center;
+  font-family: var(--font-family-main);
+
+  &:hover {
+    background-color: var(--inverted-secondary-color);
+    border-radius: 5px;
+    color: var(--hover-text);
+  }
+  &:active {
+    color: var(--red-dark);
+  }
+}
+.title {
+  display: block;
+  color: var(--secondary-text-color);
+  &:hover {
+    color: var(--hover-text);
+  }
+}

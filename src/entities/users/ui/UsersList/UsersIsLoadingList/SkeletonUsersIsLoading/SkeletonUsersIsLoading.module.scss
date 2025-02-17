@@ -1,0 +1,16 @@
+.skeletonUsersIsLoading {
+  margin: auto;
+  &_title {
+    margin-bottom: 5px;
+    border-radius: 8px;
+  }
+  &_btn {
+    border-radius: 2px;
+    margin-bottom: 20px;
+  }
+}
+
+.skeletonSearch {
+  margin-bottom: 12px;
+  border-radius: 5px;
+}

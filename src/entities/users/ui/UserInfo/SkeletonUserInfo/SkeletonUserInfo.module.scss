@@ -1,0 +1,83 @@
+.skeletonUserInfo {
+  display: grid;
+  margin: 12px;
+
+  &_avatar {
+    display: grid;
+  }
+
+  &_aboutUser {
+    display: flex;
+
+    @media (max-width: 880px) {
+      display: grid;
+      margin-bottom: 25px;
+    }
+  }
+
+  &_userInfo {
+    margin-top: 20px;
+
+    &_skeleton {
+      width: 550px;
+      height: 230px;
+
+      @media (max-width: 1030px) {
+        width: 450px;
+        height: 220px;
+      }
+
+      @media (max-width: 970px) {
+        width: 350px;
+        height: 220px;
+      }
+      @media (max-width: 880px) {
+        width: 450px;
+        height: 220px;
+      }
+
+      @media (max-width: 520px) {
+        width: 350px;
+        height: 220px;
+      }
+      @media (max-width: 410px) {
+        width: 300px;
+      }
+
+      @media (max-width: 370px) {
+        width: 220px;
+      }
+    }
+  }
+
+  &_aboutCompany {
+    &_skeleton {
+      width: 780px;
+      height: 150px;
+
+      @media (max-width: 970px) {
+        width: 550px;
+        height: 220px;
+      }
+
+      @media (max-width: 880px) {
+        width: 450px;
+      }
+
+      @media (max-width: 830px) {
+        width: 400px;
+      }
+      @media (max-width: 520px) {
+        width: 350px;
+      }
+
+      @media (max-width: 410px) {
+        width: 300px;
+      }
+
+      @media (max-width: 370px) {
+        width: 220px;
+      }
+    }
+  }
+}

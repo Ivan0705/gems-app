@@ -1,0 +1,36 @@
+.withIconWithButton {
+  display: grid;
+
+  &_wrapper {
+    display: grid;
+    border: 2px black solid;
+    border-radius: 25px;
+    margin: 50px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &_wapperTitleAndButton {
+    justify-content: center;
+    display: grid;
+  }
+
+  &_title {
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    font-size: 25px;
+  }
+}
+
+.btn {
+  margin: 9px 0px 15px;
+  font-size: 20px;
+  font-style: italic;
+  &:hover {
+    color: rgb(107, 19, 19);
+    background-color: aqua;
+  }
+}
+
+.icon {
+  margin-left: 28px;
+}

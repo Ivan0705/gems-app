@@ -1,0 +1,15 @@
+{
+  "extends": "../tsconfig.json",
+  "compilerOptions": {
+    "composite": true,
+    "noEmit": false,
+    "jsx": "react-jsx"
+  },
+  "include": [
+    "**/*.ts",
+    "src",
+    "component/helper/cypressTests/index.tsx",
+    "component/helper/cypressTests/index.tsx",
+    "e2e/routers/main/main.cy.ts"
+  ]
+}

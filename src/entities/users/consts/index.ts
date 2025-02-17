@@ -1,0 +1,15 @@
+export const arraySkeletonUsers = [
+  { width: "30%", height: 25, clsName: "skeletonSearch" },
+  { width: "60%", height: 30, clsName: "skeletonUsersIsLoading_title" },
+  { width: "57%", height: 40, clsName: "skeletonUsersIsLoading_btn" },
+  { width: "70%", height: 30, clsName: "skeletonUsersIsLoading_title" },
+  { width: "57%", height: 40, clsName: "skeletonUsersIsLoading_btn" },
+  { width: "65%", height: 30, clsName: "skeletonUsersIsLoading_title" },
+  { width: "57%", height: 40, clsName: "skeletonUsersIsLoading_btn" },
+  { width: "55%", height: 30, clsName: "skeletonUsersIsLoading_title" },
+  { width: "57%", height: 40, clsName: "skeletonUsersIsLoading_btn" },
+  { width: "45%", height: 30, clsName: "skeletonUsersIsLoading_title" },
+  { width: "57%", height: 40, clsName: "skeletonUsersIsLoading_btn" },
+  { width: "60%", height: 30, clsName: "skeletonUsersIsLoading_title" },
+  { width: "57%", height: 40, clsName: "skeletonUsersIsLoading_btn" },
+];

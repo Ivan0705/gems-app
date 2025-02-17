@@ -1,0 +1,17 @@
+.main {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+
+  &_wrapper {
+    display: flex;
+  }
+
+  &_empty {
+    min-height: var(--min-height-page);
+    &_title {
+      display: none;
+    }
+  }
+}
