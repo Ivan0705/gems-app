@@ -17,3 +17,8 @@ export const arrayRouters: IRoute[] = [
   { index: false, path: AppRoutes.POSTS, element: <AboutPostsPage /> },
   { index: false, path: AppRoutes.NOT_FOUND, element: <NotFoundPage /> },
 ];
+
+export const publicArrayRouters: IRoute[] = [
+  { index: true, path: AppRoutes.HOME, element: <AboutGemsPage /> },
+  { index: false, path: AppRoutes.NOT_FOUND, element: <NotFoundPage /> },
+];

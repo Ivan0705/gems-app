@@ -1,6 +1,6 @@
 import { Suspense } from "react";
 import { Route, Routes } from "react-router-dom";
-import { arrayRouters } from "../consts/router";
+import { arrayRouters, publicArrayRouters } from "../consts/router";
 import { IRoute } from "../model/types";
 import { useTranslation } from "react-i18next";
 import { MainPage } from "@/page/main_page";
@@ -8,10 +8,12 @@ import cls from "./AppRouters.module.scss";
 
 export const AppRouter = () => {
   const { t } = useTranslation("loading");
+  const auth = true;
+  const arrRoutes = auth ? arrayRouters : publicArrayRouters;
 
   const routersWrapper = (
     <Routes>
-      {arrayRouters.map((route: IRoute) => (
+      {arrRoutes.map((route: IRoute) => (
         <Route
           key={route.path}
           index={route.index}
