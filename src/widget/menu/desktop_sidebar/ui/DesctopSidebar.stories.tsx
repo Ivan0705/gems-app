@@ -1,6 +1,5 @@
 import { Meta, StoryObj } from "@storybook/react";
 import { ThemeDecorator } from "@/shared/storybookDecorators/themeDecorator/ThemeDecorator";
-import { Theme } from "@/app/providers/theme_provider/lib/ThemeContext";
 import { ProviderDecorator } from "@/shared/storybookDecorators/providerDecorator/ProviderDecorator";
 import {
   reactRouterParameters,
@@ -8,6 +7,7 @@ import {
 } from "storybook-addon-remix-react-router";
 import "@/app/styles/index.scss";
 import { DesktopSidebar } from "./DesktopSidebar";
+import { Theme } from "@/app/providers/theme_provider/models/enums";
 
 const meta = {
   title: "widget/menu/DesktopSidebar",
@@ -20,9 +20,9 @@ const meta = {
   },
   decorators: [ProviderDecorator, withRouter],
   argTypes: {
-    background: {
+    /* background: {
       color: "control",
-    },
+    },*/
   },
   tags: ["autodocs"],
 } satisfies Meta<typeof DesktopSidebar>;

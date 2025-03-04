@@ -10,7 +10,7 @@ describe("NotFound", () => {
     cy.get(notFoundPageByTestId).should("exist");
 
     cy.get("div", { timeout: 10000 })
-      .eq(16)
+      .eq(22)
       .and("have.class", notFoundPage)
       .and("have.css", "margin", "15px")
       .and("have.css", "font-size", "25px")

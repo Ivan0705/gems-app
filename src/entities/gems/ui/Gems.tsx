@@ -1,10 +1,9 @@
 import { memo, useState } from "react";
-// noinspection TypeScriptCheckImport
 import { useTranslation } from "react-i18next";
 import { GemCard } from "./GemCard/GemCard";
 import { arrayGems } from "../consts/arrayGems";
 import { Gem } from "../models/types/types";
-import cls from "./Gem.module.scss";
+import cls from "./Gems.module.scss";
 import { LOCAL_STORAGE_KEY } from "../consts/localStorageKey";
 import { ThemeSize } from "../consts/enums";
 import { Icon } from "@/shared/ui/Icon/Icon";
@@ -12,28 +11,24 @@ import { ReactComponent as Shape } from "@/shared/assets/icons/shape.svg?react";
 import { ReactComponent as Tiled } from "@/shared/assets/icons/tiled.svg?react";
 import { Button } from "@/shared/ui/Button/Button";
 import { ButtonTheme } from "@/shared/ui/Button/consts/enums";
-// noinspection TypeScriptUnresolvedVariable
 const defaultSize = localStorage.getItem(LOCAL_STORAGE_KEY) || ThemeSize.BIG;
 
 export const Gems = memo(() => {
   const { t } = useTranslation(["gems"]);
-  // noinspection TypeScriptUnresolvedVariable
-  const big = cls.gem_wrapper_big;
-  // noinspection TypeScriptUnresolvedVariable
-  const mini = cls.gem_wrapper_mini;
+  const big = cls.gems_wrapper_big;
+  const mini = cls.gems_wrapper_mini;
 
   const [size, setSize] = useState<string | ThemeSize>(defaultSize);
 
   const toggleTheme = () => {
     const newSize = size === ThemeSize.MINI ? ThemeSize.BIG : ThemeSize.MINI;
-    setSize?.(newSize); // noinspection TypeScriptUnresolvedVariable
+    setSize?.(newSize);
 
     localStorage.setItem(LOCAL_STORAGE_KEY, newSize);
   };
-  // noinspection TypeScriptUnresolvedVariable
 
   return (
-    <section className={cls.gem} data-testid="gems">
+    <section className={cls.gems} data-testid="gems">
       <div className={cls.switch}>
         <Button theme={ButtonTheme.CLEAR} onClick={toggleTheme}>
           {size === ThemeSize.BIG ? (
@@ -43,7 +38,7 @@ export const Gems = memo(() => {
           )}
         </Button>
       </div>
-      <div className={cls.gem_wrapper}>
+      <div className={cls.gems_wrapper}>
         {arrayGems.map((gem: Gem) => (
           <GemCard
             key={gem.title}

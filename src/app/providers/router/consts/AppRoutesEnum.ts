@@ -5,4 +5,5 @@ export enum AppRoutes {
   POSTS = "posts",
   GEMS = "gems",
   NOT_FOUND = "*",
+  LOGIN = "login",
 }

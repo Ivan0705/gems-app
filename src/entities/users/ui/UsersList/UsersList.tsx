@@ -8,6 +8,7 @@ import { useTranslation } from "react-i18next";
 import { SerializedError } from "@reduxjs/toolkit";
 import { FetchBaseQueryError } from "@reduxjs/toolkit/query";
 import { userId } from "@/shared/api/api";
+import cls from "./UsersList.module.scss";
 
 interface UsersListProps {
   search: string;
@@ -45,11 +46,11 @@ export const UsersList = memo((props: UsersListPropsType) => {
   ) : isEmptyArr?.length ? (
     empty
   ) : (
-    <div>{t("not_found_user")}</div>
+    <div className={cls.error}>{t("not_found_user")}</div>
   );
 
   return (
-    <div data-testid="users_list">
+    <div data-testid="users_list" className={cls.usersList}>
       {isLoading === false ? validate : empty}
       {users &&
         filtrationUsers(users).map((user: IUser) => (

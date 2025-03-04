@@ -3,7 +3,7 @@ import { Avatar } from "./Avatar";
 import AvatarImg from "./picture/storybook.jpg";
 import AvatarCat from "./picture/cat.jpg";
 import { ThemeDecorator } from "@/shared/storybookDecorators/themeDecorator/ThemeDecorator";
-import { Theme } from "@/app/providers/theme_provider/lib/ThemeContext";
+import { Theme } from "@/app/providers/theme_provider/models/enums";
 import "@/app/styles/index.scss";
 
 const meta = {

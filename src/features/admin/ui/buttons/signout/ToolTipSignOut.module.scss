@@ -1,0 +1,14 @@
+.toolTipSignOut {
+  display: grid;
+
+  &_btn {
+    margin-bottom: 25px;
+    height: 45px;
+    width: 120px;
+    font-size: 19px;
+
+    @media (max-width: 770px) {
+      height: 37px;
+    }
+  }
+}

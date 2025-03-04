@@ -1,6 +1,6 @@
 import { Meta, StoryObj } from "@storybook/react";
 import { ThemeDecorator } from "@/shared/storybookDecorators/themeDecorator/ThemeDecorator";
-import { Theme } from "@/app/providers/theme_provider/lib/ThemeContext";
+import { Theme } from "@/app/providers/theme_provider/models/enums";
 import { PostsList } from "./PostsList";
 import { postsForTesting } from "../../consts";
 

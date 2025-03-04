@@ -1,6 +1,6 @@
 import { Meta, StoryObj } from "@storybook/react";
 import { UserInfo } from "./UserInfo";
-import { Theme } from "@/app/providers/theme_provider/lib/ThemeContext";
+import { Theme } from "@/app/providers/theme_provider/models/enums";
 import { ThemeDecorator } from "@/shared/storybookDecorators/themeDecorator/ThemeDecorator";
 import {
   reactRouterParameters,

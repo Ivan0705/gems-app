@@ -1,11 +1,17 @@
 .mobile_setting {
   width: 100%;
   position: absolute;
-  background-color: var(--light-gray);
+  background-color: var(--inverted-primary-color);
   right: 0;
+  margin-top: 20px;
+  display: none;
+  @media (max-width: 770px) {
+    display: block;
+  }
 
   &_wrapper {
     display: flex;
+    justify-content: end;
   }
 }
 .item {

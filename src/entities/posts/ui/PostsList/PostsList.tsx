@@ -4,6 +4,7 @@ import { PostItem } from "../PostItem/PostItem";
 import { useTranslation } from "react-i18next";
 import { FetchBaseQueryError } from "@reduxjs/toolkit/query";
 import { SerializedError } from "@reduxjs/toolkit";
+import cls from "./PostsList.module.scss";
 
 interface PostsListProps {
   posts: IPost[] | undefined;
@@ -34,11 +35,11 @@ export const PostsList = memo((props: PostsListProps) => {
   ) : arrayFilterPosts?.length ? (
     empty
   ) : (
-    <div>{t("not_found_post")}</div>
+    <div className={cls.postsList_error}>{t("not_found_post")}</div>
   );
 
   return (
-    <div data-testid="postslist">
+    <div data-testid="postslist" className={cls.postsList}>
       {isLoading === false ? validate : empty}
       {posts &&
         filtrationPosts(posts).map((post: IPost) => (

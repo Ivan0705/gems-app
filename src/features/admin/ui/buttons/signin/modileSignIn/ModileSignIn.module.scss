@@ -1,0 +1,6 @@
+.modileSignOut {
+  display: none;
+  @media (max-width: 770px) {
+    display: block;
+  }
+}

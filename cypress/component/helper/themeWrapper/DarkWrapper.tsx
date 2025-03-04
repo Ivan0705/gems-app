@@ -1,4 +1,4 @@
-import { Theme } from "@/app/providers/theme_provider/lib/ThemeContext";
+import { Theme } from "@/app/providers/theme_provider/models/enums";
 import { ReactNode } from "react";
 import { MainWrapper } from "./MainWrapper";
 

@@ -5,8 +5,9 @@ import { AboutPostsPage } from "../../../../page/about_posts_page/ui/AboutPostsP
 import { AboutUserPage } from "../../../../page/about_user_page";
 import { IRoute } from "../model/types";
 import { AppRoutes } from "./AppRoutesEnum";
+import { LoginPage } from "@/page/about_login_page";
 
-export const arrayRouters: IRoute[] = [
+export const authArrayRouters: IRoute[] = [
   { index: true, path: AppRoutes.HOME, element: <AboutGemsPage /> },
   { index: false, path: AppRoutes.USERS, element: <AboutUsersPage /> },
   {
@@ -18,7 +19,8 @@ export const arrayRouters: IRoute[] = [
   { index: false, path: AppRoutes.NOT_FOUND, element: <NotFoundPage /> },
 ];
 
-export const publicArrayRouters: IRoute[] = [
+export const visitorArrayRouters: IRoute[] = [
   { index: true, path: AppRoutes.HOME, element: <AboutGemsPage /> },
   { index: false, path: AppRoutes.NOT_FOUND, element: <NotFoundPage /> },
+  { index: false, path: AppRoutes.LOGIN, element: <LoginPage /> },
 ];

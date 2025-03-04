@@ -53,7 +53,7 @@ describe("LightPost.cy.tsx", () => {
 
     cy.get("hr")
       .should("have.class", postItem_line)
-      .and("have.css", "width", "483.109375px")
+      .and("have.css", "width", "478.15625px")
       .and("have.css", "margin-left", "2px")
       .and("have.css", "margin-bottom", "2px")
       .and("have.css", "border", `2px solid ${inverted_secondary_color_light}`);

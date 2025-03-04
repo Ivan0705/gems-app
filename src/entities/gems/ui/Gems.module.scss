@@ -1,0 +1,52 @@
+$value: 950px;
+
+.gems {
+  display: block;
+  margin: 15px;
+  min-height: var(--min-height-page);
+
+  &_wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    @media (max-width: $value) {
+      display: grid;
+    }
+    &_mini {
+      margin-left: 7px;
+      width: 49%;
+
+      @media (max-width: $value) {
+        width: 100%;
+        margin: auto;
+      }
+    }
+    &_big {
+      max-width: 100%;
+    }
+  }
+}
+.mini {
+  width: 50%;
+  @media (max-width: $value) {
+    width: 100%;
+  }
+}
+
+.big {
+  max-width: 100%;
+}
+
+.btn {
+  width: 45px;
+  height: 65px;
+  margin-right: 5px;
+
+  @media (max-width: $value) {
+    display: none;
+  }
+}
+
+.switch {
+  display: flex;
+  justify-content: end;
+}

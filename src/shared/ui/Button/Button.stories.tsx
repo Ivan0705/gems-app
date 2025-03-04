@@ -2,7 +2,7 @@
 import { Meta, StoryObj } from "@storybook/react";
 import { Button } from "./Button";
 import { ThemeDecorator } from "@/shared/storybookDecorators/themeDecorator/ThemeDecorator";
-import { Theme } from "@/app/providers/theme_provider/lib/ThemeContext";
+import { Theme } from "@/app/providers/theme_provider/models/enums";
 import { ButtonSize, ButtonTheme } from "./consts/enums";
 import "@/app/styles/index.scss";
 import { Icon } from "../Icon/Icon";

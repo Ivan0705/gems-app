@@ -2,7 +2,7 @@ import { Meta, StoryObj } from "@storybook/react";
 import { SkeletonPosts } from "./SkeletonPosts";
 import "@/app/styles/index.scss";
 import { ThemeDecorator } from "@/shared/storybookDecorators/themeDecorator/ThemeDecorator";
-import { Theme } from "@/app/providers/theme_provider/lib/ThemeContext";
+import { Theme } from "@/app/providers/theme_provider/models/enums";
 
 export default {
   title: "entities/posts/IsLoadingPostList/SkeletonPosts",

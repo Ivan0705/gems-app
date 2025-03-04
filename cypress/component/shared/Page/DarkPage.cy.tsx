@@ -15,7 +15,7 @@ describe("DarkPage.cy.jsx", () => {
     cy.get(pageByTestId)
       .should("exist")
       .and("have.class", page)
-      .and("have.css", "width", "500px")
+      .and("have.css", "width", "495px")
       .and("have.css", "padding", "0px")
       .and("have.css", "margin", "0px")
       .and("not.have.attr", "button");

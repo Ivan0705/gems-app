@@ -2,7 +2,7 @@ import { Meta, StoryObj } from "@storybook/react";
 import { User } from "./User";
 import { ProviderDecorator } from "@/shared/storybookDecorators/providerDecorator/ProviderDecorator";
 import { ThemeDecorator } from "@/shared/storybookDecorators/themeDecorator/ThemeDecorator";
-import { Theme } from "@/app/providers/theme_provider/lib/ThemeContext";
+import { Theme } from "@/app/providers/theme_provider/models/enums";
 import "@/app/styles/index.scss";
 import { IUser } from "../../models/types/types";
 

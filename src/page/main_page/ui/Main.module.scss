@@ -6,6 +6,9 @@
 
   &_wrapper {
     display: flex;
+    @media (max-width: 770px) {
+      margin-top: 15px;
+    }
   }
 
   &_empty {

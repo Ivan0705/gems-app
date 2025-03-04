@@ -1,4 +1,4 @@
-import { Theme } from "@/app/providers/theme_provider/lib/ThemeContext";
+import { Theme } from "@/app/providers/theme_provider/models/enums";
 import { ThemeProvider } from "@/app/providers/theme_provider/ui/ThemeProvider";
 
 export const ThemeDecorator = (theme: Theme) => (StoryComponent: any) => (

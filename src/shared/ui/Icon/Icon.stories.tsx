@@ -3,7 +3,7 @@ import { Icon } from "./Icon";
 import { ReactComponent as Diamond } from "@/shared/assets/icons/diamond.svg?react";
 import { IconSize } from "./consts";
 import { ThemeDecorator } from "@/shared/storybookDecorators/themeDecorator/ThemeDecorator";
-import { Theme } from "@/app/providers/theme_provider/lib/ThemeContext";
+import { Theme } from "@/app/providers/theme_provider/models/enums";
 import "@/app/styles/index.scss";
 
 const meta = {

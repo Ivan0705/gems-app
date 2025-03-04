@@ -2,7 +2,7 @@ import { Posts } from "./Posts";
 import { ProviderDecorator } from "@/shared/storybookDecorators/providerDecorator/ProviderDecorator";
 import { Meta, StoryObj } from "@storybook/react";
 import { ThemeDecorator } from "@/shared/storybookDecorators/themeDecorator/ThemeDecorator";
-import { Theme } from "@/app/providers/theme_provider/lib/ThemeContext";
+import { Theme } from "@/app/providers/theme_provider/models/enums";
 
 const meta = {
   title: "entities/posts/Posts/Posts",

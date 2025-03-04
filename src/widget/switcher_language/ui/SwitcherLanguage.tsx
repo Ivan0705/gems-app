@@ -6,9 +6,14 @@ import { Icon } from "@/shared/ui/Icon/Icon";
 import cls from "./SwitcherLanguage.module.scss";
 import { Button } from "@/shared/ui/Button/Button";
 import { ButtonTheme } from "@/shared/ui/Button/consts/enums";
+import { SwitcherLanguageColor } from "../model/enums";
 
-export const SwitcherLanguage = memo(() => {
+interface SwitcherLanguageProps {
+  color?: any;
+}
+export const SwitcherLanguage = memo((props: SwitcherLanguageProps) => {
   const { t, i18n } = useTranslation("language");
+  const { color = SwitcherLanguageColor.BLACK } = props;
 
   const changeLanguage = () => {
     i18n.changeLanguage(i18n.language === "ru" ? "en" : "ru");
@@ -26,7 +31,9 @@ export const SwitcherLanguage = memo(() => {
         ) : (
           <Icon Svg={EnglishFlag} className={cls.switherLanguage_flag} />
         )}
-        <div className={cls.switherLanguage_title}>{t("language")}</div>
+        <div className={cls.switherLanguage_title} style={{ color: color }}>
+          {t("language")}
+        </div>
       </Button>
     </div>
   );

@@ -1,7 +1,7 @@
 import { Meta, StoryObj } from "@storybook/react";
 import { Loader } from "./Loader";
 import { ThemeDecorator } from "@/shared/storybookDecorators/themeDecorator/ThemeDecorator";
-import { Theme } from "@/app/providers/theme_provider/lib/ThemeContext";
+import { Theme } from "@/app/providers/theme_provider/models/enums";
 import { ProviderDecorator } from "@/shared/storybookDecorators/providerDecorator/ProviderDecorator";
 import "@/app/styles/index.scss";
 

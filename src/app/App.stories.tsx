@@ -5,14 +5,20 @@ import {
 import App from "./App";
 import { ProviderDecorator } from "@/shared/storybookDecorators/providerDecorator/ProviderDecorator";
 import { Meta, StoryObj } from "@storybook/react";
-import { Theme } from "./providers/theme_provider/lib/ThemeContext";
+import { Theme } from "@/app/providers/theme_provider/models/enums";
 import { ThemeDecorator } from "@/shared/storybookDecorators/themeDecorator/ThemeDecorator";
 import { SuspenseDecorator } from "@/shared/storybookDecorators/suspenseDecorator/SuspenseDecorator";
+import { AuthProviderDecorator } from "@/shared/storybookDecorators/authProviderDecorator/AuthProviderDecorator";
 
 export default {
   title: "app/App",
   component: App,
-  decorators: [withRouter, ProviderDecorator, SuspenseDecorator],
+  decorators: [
+    withRouter,
+    ProviderDecorator,
+    SuspenseDecorator,
+    AuthProviderDecorator,
+  ],
   tags: ["autodocs"],
   parameters: {
     reactRouter: reactRouterParameters({

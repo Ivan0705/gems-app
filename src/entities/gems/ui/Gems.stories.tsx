@@ -1,7 +1,7 @@
 import { Gems } from "./Gems";
 import { Meta, StoryObj } from "@storybook/react";
 import { ThemeDecorator } from "@/shared/storybookDecorators/themeDecorator/ThemeDecorator";
-import { Theme } from "@/app/providers/theme_provider/lib/ThemeContext";
+import { Theme } from "@/app/providers/theme_provider/models/enums";
 import { ProviderDecorator } from "@/shared/storybookDecorators/providerDecorator/ProviderDecorator";
 
 const meta = {
@@ -11,7 +11,6 @@ const meta = {
   tags: ["autodocs"],
 } as Meta<typeof Gems>;
 
-// noinspection JSUnusedGlobalSymbols
 export default meta;
 
 type Story = StoryObj<typeof Gems>;

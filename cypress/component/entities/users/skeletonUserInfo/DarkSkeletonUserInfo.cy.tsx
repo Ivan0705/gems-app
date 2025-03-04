@@ -63,7 +63,7 @@ describe("DarkSkeletonUserInfo.cy.tsx", () => {
       .eq(10)
       .should("have.class", skeletonUserInfo_aboutCompany_skeleton)
       .and("have.css", "margin-bottom", "0px")
-      .and("have.css", "width", "476px")
+      .and("have.css", "width", "471px")
       .and("have.css", "height", "50px");
   });
 });

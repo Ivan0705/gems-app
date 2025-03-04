@@ -80,3 +80,15 @@
 h4 {
   color: var(--black-icon);
 }
+
+.wrapper {
+  display: block;
+  @media (max-width: 770px) {
+    display: none;
+  }
+}
+
+.modileSigOutTitile {
+  height: 41px;
+  padding-top: 10px;
+}

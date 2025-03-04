@@ -6,6 +6,7 @@ export enum AppRoutes {
   USER_INFO = "user_info",
   POSTS = "posts",
   NOT_FOUND = "not_found",
+  LOGIN = "login",
 }
 
 export const getRouteMain = () => main;

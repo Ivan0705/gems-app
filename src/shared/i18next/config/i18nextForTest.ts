@@ -6,9 +6,7 @@ i18n.use(initReactI18next).init({
   fallbackLng: "ru",
   ns: ["translationsNS"],
   defaultNS: "translationsNS",
-
   debug: false,
-
   interpolation: {
     escapeValue: false,
   },

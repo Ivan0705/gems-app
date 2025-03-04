@@ -51,7 +51,7 @@ describe("DarkInput.cy.jsx", () => {
       )
       .and("have.css", "border", `0px none ${black}`)
       .and("have.css", "outline", `${black} none 0px`)
-      .and("have.css", "width", "407.03125px")
+      .and("have.css", "width", "402.03125px")
       .and("have.css", "position", "static")
       .and("have.css", "animation", "none 0s ease 0s 1 normal none running")
       .trigger("focus")

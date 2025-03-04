@@ -1,26 +1,15 @@
-/* eslint-disable max-lines */
 import { mount } from "cypress/react18";
 import { DarkWrapper } from "../../helper/themeWrapper/DarkWrapper";
 import { Navbar } from "@/widget/navbar";
 import { CustomRouter } from "../../helper/customRouter/CustomRouter";
-import {
-  buttonCypress,
-  clearButtonCypress,
-  sizeMButtonCypress,
-} from "../../helper/cypressTests";
+import { buttonCypress, sizeMButtonCypress } from "../../helper/cypressTests";
 import {
   btn,
-  burgerBtn,
-  gearBtn,
   navbar,
   navbar_btns,
-  navbar_burgerMenu,
-  navbar_gearSetting,
   navbar_logo,
   navbar_logoPicture,
-  navbar_mobile,
   navbar_wrapper,
-  switherLanguage_flag,
   switherLanguage_title,
   themeSwitcher_btn,
 } from "../../../consts";
@@ -52,7 +41,7 @@ describe("DarkNavbar.cy.jsx", () => {
       .and("have.css", "justify-content", "space-between")
       .and("have.css", "display", "flex")
       .and("have.css", "height", "113.828125px")
-      .and("have.css", "width", "500px");
+      .and("have.css", "width", "495px");
 
     cy.get("div")
       .should("exist")
@@ -91,48 +80,17 @@ describe("DarkNavbar.cy.jsx", () => {
       .eq(8)
       .and("have.class", switherLanguage_title);
 
-    cy.get("div")
-      .should("exist")
-      .eq(9)
-      .and("have.class", navbar_mobile)
-      .and("have.css", "display", "flex")
-      .and("have.css", "margin-right", "5px");
-
     buttonCypress(0, primary_text_color_dark, "0px");
-    clearButtonCypress(0, primary_text_color_dark);
     sizeMButtonCypress(0);
 
     cy.get("button").eq(0).should("exist");
 
     cy.get("button").eq(1).should("exist");
 
-    buttonCypress(2, primary_text_color_dark, "0px");
-    clearButtonCypress(2, primary_text_color_dark);
-    sizeMButtonCypress(2);
-
-    cy.get("button")
-      .eq(2)
-      .should("exist")
-      //gearBtn class
-      .and("have.class", gearBtn)
-      .and("have.css", "display", "flex")
-      .and("have.css", "width", "40px")
-      .and("have.css", "height", "40px")
-      .click();
+    buttonCypress(2, primary_text_color_dark, "6px 15px");
 
     buttonCypress(3, primary_text_color_dark, "0px");
-    clearButtonCypress(3, primary_text_color_dark);
     sizeMButtonCypress(3);
-
-    cy.get("button")
-      .eq(3)
-      .should("exist")
-      //burgerBtn class
-      .and("have.class", burgerBtn)
-      .and("have.css", "display", "flex")
-      .and("have.css", "width", "40px")
-      .and("have.css", "height", "40px")
-      .click();
 
     cy.get("svg")
       .eq(0)
@@ -144,23 +102,5 @@ describe("DarkNavbar.cy.jsx", () => {
       .and("have.css", "margin-left", "5px");
 
     cy.get("svg").eq(1).should("exist").and("have.class", themeSwitcher_btn);
-
-    cy.get("svg").eq(2).should("exist").and("have.class", switherLanguage_flag);
-
-    cy.get("svg")
-      .eq(3)
-      .should("exist")
-      .and("have.class", navbar_gearSetting)
-      .and("have.css", "width", "40px")
-      .and("have.css", "height", "40px")
-      .click();
-
-    cy.get("svg")
-      .eq(4)
-      .should("exist")
-      .and("have.class", navbar_burgerMenu)
-      .and("have.css", "width", "40px")
-      .and("have.css", "height", "40px")
-      .click();
   });
 });

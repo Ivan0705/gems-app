@@ -1,0 +1,6 @@
+.desktopSignOut {
+  display: block;
+  @media (max-width: 770px) {
+    display: none;
+  }
+}

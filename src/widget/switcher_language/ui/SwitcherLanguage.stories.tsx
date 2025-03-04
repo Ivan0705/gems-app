@@ -1,6 +1,6 @@
 import { Meta, StoryObj } from "@storybook/react";
 import { ThemeDecorator } from "@/shared/storybookDecorators/themeDecorator/ThemeDecorator";
-import { Theme } from "@/app/providers/theme_provider/lib/ThemeContext";
+import { Theme } from "@/app/providers/theme_provider/models/enums";
 import { SwitcherLanguage } from "./SwitcherLanguage";
 import { withRouter } from "storybook-addon-remix-react-router";
 
@@ -8,11 +8,6 @@ const meta = {
   title: "widget/switcher_language/Switcherlanguage",
   component: SwitcherLanguage,
   decorators: [withRouter],
-  argTypes: {
-    background: {
-      color: "control",
-    },
-  },
   tags: ["autodocs"],
 } satisfies Meta<typeof SwitcherLanguage>;
 

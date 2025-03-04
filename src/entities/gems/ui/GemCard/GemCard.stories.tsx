@@ -4,7 +4,7 @@ import { ProviderDecorator } from "@/shared/storybookDecorators/providerDecorato
 import ruby from "../../pictures/ruby/ruby1.jpg";
 import "@/app/styles/index.scss";
 import { ThemeDecorator } from "@/shared/storybookDecorators/themeDecorator/ThemeDecorator";
-import { Theme } from "@/app/providers/theme_provider/lib/ThemeContext";
+import { Theme } from "@/app/providers/theme_provider/models/enums";
 
 const meta = {
   title: "entities/gems/GemCard/GemCard",

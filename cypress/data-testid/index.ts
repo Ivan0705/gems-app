@@ -53,3 +53,7 @@ export const skeletonByTestId = '[data-testid="skeleton"]';
 
 /*FOOTER */
 export const footerByTestId = '[data-testid="footer"]';
+
+/*FEATCHERS */
+export const signInByTestId = '[data-testid="signin"]';
+export const adminFormByTestId = '[data-testid="adminForm"]';

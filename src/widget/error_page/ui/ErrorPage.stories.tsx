@@ -2,7 +2,7 @@ import { Meta, StoryObj } from "@storybook/react";
 import { ErrorPage } from "./ErrorPage";
 import "@/app/styles/index.scss";
 import { ThemeDecorator } from "@/shared/storybookDecorators/themeDecorator/ThemeDecorator";
-import { Theme } from "@/app/providers/theme_provider/lib/ThemeContext";
+import { Theme } from "@/app/providers/theme_provider/models/enums";
 
 const meta = {
   title: "widget/error-page/ErrorPage",

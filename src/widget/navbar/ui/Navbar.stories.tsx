@@ -2,7 +2,7 @@ import { Meta, StoryObj } from "@storybook/react";
 import { Navbar } from "./Navbar";
 import "@/app/styles/index.scss";
 import { ThemeDecorator } from "@/shared/storybookDecorators/themeDecorator/ThemeDecorator";
-import { Theme } from "@/app/providers/theme_provider/lib/ThemeContext";
+import { Theme } from "@/app/providers/theme_provider/models/enums";
 import { withRouter } from "storybook-addon-remix-react-router";
 
 const meta = {

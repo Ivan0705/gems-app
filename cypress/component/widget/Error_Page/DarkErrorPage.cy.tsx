@@ -24,7 +24,7 @@ describe("DarkErrorPage.cy.jsx", () => {
       .should("exist")
       .eq(2)
       .and("have.class", error_page)
-      .and("have.css", "width", "500px")
+      .and("have.css", "width", "495px")
       .and("have.css", "height", "500px")
       .and("have.css", "display", "flex")
       .and("have.css", "flex-direction", "column")
