@@ -30,7 +30,7 @@
     Ссылка: https://github.com/Ivan0705/gems-app/blob/master/.stylelintrc.json
 
 9. i18next, фремворк перевода, интернационализации;
-    ССылки: https://github.com/Ivan0705/gems-app/blob/master/src/shared/i18next/config/i18next.ts,
+    Ссылки: https://github.com/Ivan0705/gems-app/blob/master/src/shared/i18next/config/i18next.ts,
     https://github.com/Ivan0705/gems-app/blob/master/src/widget/switcher_language/ui/SwitcherLanguage.tsx
 
 10. Фальшивый сервер для авторизации и аутентификации;
