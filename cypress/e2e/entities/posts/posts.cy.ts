@@ -1,4 +1,3 @@
-import { placeholder } from "../../../consts";
 import {
   postItem,
   postItem_line,
@@ -9,7 +8,7 @@ import {
   inverted_secondary_color_light,
   primary_text_color_light,
 } from "../../../consts/colors/rgdColors";
-import { postItemByTestId, postsByTestId } from "../../../data-testid";
+import { postItemByTestId } from "../../../data-testid";
 import { login, posts } from "../../url";
 
 describe("Posts.cy.ts", () => {
