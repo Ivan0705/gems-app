@@ -27,7 +27,7 @@ export default {
     }),
   },
   argTypes: {
-    backgroundColor: { control: "control" },
+    backgroundColor: { control: "color" },
   },
 } as Meta<typeof App>;
 
@@ -38,6 +38,7 @@ export const Light: Story = {
     name: "Light",
   },
 };
+
 Light.decorators = [ThemeDecorator(Theme.LIGHT)];
 
 export const Dark: Story = {
@@ -45,4 +46,5 @@ export const Dark: Story = {
     name: "Dark",
   },
 };
+
 Dark.decorators = [ThemeDecorator(Theme.DARK)];

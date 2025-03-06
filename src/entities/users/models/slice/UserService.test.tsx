@@ -12,6 +12,7 @@ const Wrapper = (props: { children: ReactNode }) => {
   const { children } = props;
   return wrapperRouterProviderForTest(children);
 };
+
 const refetch = () => {};
 const data = {};
 const id = 1;

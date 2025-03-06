@@ -23,8 +23,13 @@ export const useLoginAdmin = () => {
 
   useEffect(() => {
     setTimeout(async () => {
-      const users = (await UserService.getUsers()).data;
+      /*AbortController - это экспериментальная технология
+      Так как спецификация этой технологии ещё не стабилизировалась*/
+
+      const controller = new AbortController();
+      const users = (await UserService.getUsers(controller)).data;
       setAdmins(users);
+      return () => controller.abort();
     });
   }, [setAdmins]);
 

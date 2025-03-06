@@ -19,7 +19,7 @@ const meta = {
   ],
   argTypes: {
     backroundColor: {
-      control: "control",
+      control: "color",
     },
   },
 } satisfies Meta<typeof LoginPage>;

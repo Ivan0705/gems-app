@@ -1,50 +1,37 @@
-# React + TypeScript + Vite
+В проекте используются:
+1. React;
+2. TypeScript;
+3. SCSS;
+4. Тесты:
+  1. Тесты на React компоненты.
+     Запустить тесты можно с помощью команды "npm run test".
+     Пример кода: https://github.com/Ivan0705/gems-app/blob/master/src/widget/navbar/ui/Navbar.test.tsx
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+  2. e2e тестирование с Cypress.
+     Пример кода: https://github.com/Ivan0705/gems-app/blob/master/cypress/e2e/features/login.cy.tsx
 
-Currently, two official plugins are available:
+  3. Компонентное тестирование с Cypress.
+     Пример кода: https://github.com/Ivan0705/gems-app/blob/master/cypress/component/shared/Button/DarkButton.cy.tsx
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+5. Стори-кейсы:
+    В проекте для каждого компонента описываются стори-кейсы.
+    Файл со стори-кейсами создается с компонентом, имеющим расширение .stories.tsx
+    Запустить storybook можно по команде "npm start storybook dev-p 6066".
+    Примеры кода: https://github.com/Ivan0705/gems-app/blob/master/src/shared/ui/Button/Button.stories.tsx,
+    https://github.com/Ivan0705/gems-app/blob/master/src/entities/users/ui/UserInfo/UserInfo.stories.tsx
 
-## Expanding the ESLint configuration
+6. Инструмент сборки проекта Vite;
+    Ссылка: https://github.com/Ivan0705/gems-app/blob/master/vite.config.ts
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+7. Инструмент анализа качества кода ESlint;
+    Ссылка: https://github.com/Ivan0705/gems-app/blob/master/eslint.config.js
 
-- Configure the top-level `parserOptions` property like this:
+8. Инструмент анализа качества CSS кода Stylelint;
+    Ссылка: https://github.com/Ivan0705/gems-app/blob/master/.stylelintrc.json
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ["./tsconfig.node.json", "./tsconfig.app.json"],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-});
-```
+9. i18next, фремворк перевода, интернационализации;
+    ССылки: https://github.com/Ivan0705/gems-app/blob/master/src/shared/i18next/config/i18next.ts,
+    https://github.com/Ivan0705/gems-app/blob/master/src/widget/switcher_language/ui/SwitcherLanguage.tsx
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from "eslint-plugin-react";
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: "18.3" } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs["jsx-runtime"].rules,
-  },
-});
-```
+10. Фальшивый сервер для авторизации и аутентификации;
+    Ссылка: https://github.com/Ivan0705/gems-app/blob/master/public/db/users.json

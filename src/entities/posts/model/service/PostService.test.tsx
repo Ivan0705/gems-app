@@ -5,6 +5,7 @@ import { ReactNode } from "react";
 import { posts, urlWithParams } from "../../../../shared/api/api";
 import createFetchMock from "vitest-fetch-mock";
 import { vi } from "vitest";
+
 const fetch = createFetchMock(vi);
 fetch.enableMocks();
 
@@ -14,6 +15,7 @@ const Wrapper = (props: { children: ReactNode }) => {
   const { children } = props;
   return wrapperRouterProviderForTest(children);
 };
+
 function refetch() {
   console.log("Hello");
 }
