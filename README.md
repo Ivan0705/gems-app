@@ -38,6 +38,6 @@
 
 11. Добавил файл .env в .gitignore.
     В файле .env(enviroment) лежат 2 переменные:
-    VITE_REACT_API_URL=/gems-app
+    VITE_REACT_API_URL=/gems-app,
     VITE_REACT_API_BASE_URL=/
 
