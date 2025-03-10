@@ -35,3 +35,9 @@
 
 10. Фальшивый сервер для авторизации и аутентификации;
     Ссылка: https://github.com/Ivan0705/gems-app/blob/master/public/db/users.json
+
+11. Добавил файл .env в .gitignore.
+    В файле .env(enviroment) лежат 2 переменные:
+    VITE_REACT_API_URL=/gems-app
+    VITE_REACT_API_BASE_URL=/
+

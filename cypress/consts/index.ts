@@ -74,5 +74,5 @@ export const lds_ellipsis = "_lds_ellipsis_1e61i_1";
 export const error_page = "_error_page_q0ffd_1";
 
 /*Footer */
-export const footer = "_footer_1dpct_1";
-export const footer_title = "_footer_title_1dpct_12";
+export const footer = "_footer_1tpfy_1";
+export const footer_title = "_footer_title_1tpfy_11";
