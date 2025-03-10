@@ -1,1 +1,0 @@
-import{r as s,j as a,P as e,l as o}from"./index-thrEB2f3.js";const n="_loginPage_rt9ai_1",t={loginPage:n},i=s.memo(()=>a.jsx(e,{children:a.jsx("div",{className:t.loginPage,"data-testid":"about_login_page",children:a.jsx(o,{})})}));export{i as LoginPage};
