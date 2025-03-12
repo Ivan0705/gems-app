@@ -1,0 +1,1 @@
+import{r}from"./index-ClcD9ViR.js";const n=r.createContext({});var o=(t=>(t.TRUE="true",t.FALSE="false",t))(o||{});const u="auth";function c(){const{auth:t,setAuth:a}=r.useContext(n),s=()=>{const e=t===o.FALSE?o.TRUE:o.FALSE;a==null||a(e),localStorage.setItem(u,e)};return{auth:t||o.FALSE,toggleAuth:s}}export{o as A,u as L,n as a,c as u};

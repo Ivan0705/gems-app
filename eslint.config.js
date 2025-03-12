@@ -25,7 +25,7 @@ export default tseslint.config(
     },
   },
   {
-    ignores: ["dist", "storybook-static", "docs", "node_modules", "cypress"],
+    ignores: ["dist", "storybook-static", "node_modules", "cypress"],
   },
   js.configs.recommended,
   ...tseslint.configs.recommended,
