@@ -1,5 +1,0 @@
-import{a as n,P as d}from"./ProviderDecorator-Bt8PWHP4.js";import{T as p,a as i}from"./ThemeDecorator-BctgQdPO.js";import"./jsx-runtime-CfatFE5O.js";import"./index-ClcD9ViR.js";import"./_commonjsHelpers-Cpj98o6Y.js";import"./authSlice-CKreppbF.js";import"./classNames-mpNP1gNJ.js";import"./SkeletonPosts-D6nBaj8h.js";import"./Skeleton-Ci9aWoFK.js";import"./index-DjdpWOF8.js";import"./useTranslation-qApjsL5e.js";import"./i18nInstance-DCxlOlkw.js";import"./PostsList-B4ifS686.js";const b={title:"entities/posts/Posts/Posts",component:n,decorators:[d],argTypes:{backgroundColor:{control:"color"}},tags:["autodocs"]},r={args:{}};r.decorators=[p(i.LIGHT)];const o={args:{}};o.decorators=[p(i.DARK)];var t,s,a;r.parameters={...r.parameters,docs:{...(t=r.parameters)==null?void 0:t.docs,source:{originalSource:`{
-  args: {}
-}`,...(a=(s=r.parameters)==null?void 0:s.docs)==null?void 0:a.source}}};var e,m,c;o.parameters={...o.parameters,docs:{...(e=o.parameters)==null?void 0:e.docs,source:{originalSource:`{
-  args: {}
-}`,...(c=(m=o.parameters)==null?void 0:m.docs)==null?void 0:c.source}}};const v=["Light","Dark"];export{o as Dark,r as Light,v as __namedExportsOrder,b as default};

@@ -1,4 +1,4 @@
-const pathToUsersBeforeProd="/db/users.json";
+const pathToUsersBeforeProd="./db/users.json";
 const pathToUsersAfterProd="/gems-app/db/users.json";
 
 export const loadAuthFromLocalStorage = () => {

@@ -1,4 +1,4 @@
-const loadPathBeforeProd=`/locales/{{lng}}/{{ns}}.json`;
+const loadPathBeforeProd=`./locales/{{lng}}/{{ns}}.json`;
 const loadPathAfterProd=`/gems-app/locales/{{lng}}/{{ns}}.json`;
 
 export const loadPathBeforeAndAfterProd =
