@@ -2,7 +2,7 @@ const loadPathBeforeProd = `/locales/{{lng}}/{{ns}}.json`;
 
 const url = "gems-app";
 
-const checkUrl = url === "gems-app" ? url : "gems-app-storybook.vercel.app";
+const checkUrl = url === "gems-app" ? url : "docs";
 
 const loadPathAfterProd = `/${checkUrl}/locales/{{lng}}/{{ns}}.json`;
 
