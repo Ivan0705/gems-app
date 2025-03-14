@@ -1,7 +1,7 @@
 {
     "headers":[
         {
-            "source":"/gems-app/locales/(*)",
+            "source":"./docs/locales/(*)",
             "headers":[
                 {
                     "key":"Access-Control-Allow-Origin",
